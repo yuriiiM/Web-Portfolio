@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment — Ruiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header gingham">
+        <div class="wrap nav">
+            <a href="index.html" class="brand">
+                <svg class="bow-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 32c-4-8-14-14-22-11-6 2-6 12 0 15 8 4 18-1 22-4z" fill="#f2b3c6" stroke="#c15c78"
+                        stroke-width="2" stroke-linejoin="round" />
+                    <path d="M32 32c4-8 14-14 22-11 6 2 6 12 0 15-8 4-18-1-22-4z" fill="#f6c9d6" stroke="#c15c78"
+                        stroke-width="2" stroke-linejoin="round" />
+                    <circle cx="32" cy="32" r="5" fill="#c15c78" />
+                </svg>
+                Your Name
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 6h18M3 12h18M3 18h18" />
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quiz.html" class="active">Quiz</a></li>
+                <li><a href="assignment.html">Assignment</a></li>
+                <li><a href="exam.html">Exam</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <section class="page-hero">
+            <span class="eyebrow">quiz work</span>
+            <h1 contenteditable="true" class="editable">My Quiz Uploads</h1>
+            <p contenteditable="true" class="editable">A little gallery of quiz screenshots and photos — upload as many
+                as you'd like below.</p>
+        </section>
+
+        <section class="uploader-section" data-gallery="quiz">
+            <div class="dropzone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M12 16V4M12 4l-4 4M12 4l4 4" />
+                    <path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" />
+                </svg>
+                <h3>drag & drop your images here</h3>
+                <p>or click to browse — JPG, PNG, or any image file</p>
+                <span class="dz-browse">choose files</span>
+                <input type="file" accept="image/*" multiple>
+            </div>
+
+            <div class="gallery-meta">
+                <h4>uploaded work</h4>
+                <span class="count">no uploads yet</span>
+            </div>
+            <div class="gallery"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer gingham">
+        <div class="wrap">made with <span class="script">love</span> — edit this footer in index.html</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
