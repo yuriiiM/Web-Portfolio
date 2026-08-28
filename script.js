@@ -1,3 +1,10 @@
+// ============================================================
+// Portfolio site behaviour — everything runs in the browser.
+// Images and captions are saved in localStorage, so they're
+// still there after a refresh (on the same browser/device).
+// No server or Node.js required — just open the HTML files.
+// ============================================================
+
 document.addEventListener('DOMContentLoaded', () => {
     initNavToggle();
     initProfilePhoto();
