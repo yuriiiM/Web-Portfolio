@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity — Ruiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header gingham">
+        <div class="wrap nav">
+            <a href="index.html" class="brand">
+                <svg class="bow-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 32c-4-8-14-14-22-11-6 2-6 12 0 15 8 4 18-1 22-4z" fill="#f2b3c6" stroke="#c15c78"
+                        stroke-width="2" stroke-linejoin="round" />
+                    <path d="M32 32c4-8 14-14 22-11 6 2 6 12 0 15-8 4-18-1-22-4z" fill="#f6c9d6" stroke="#c15c78"
+                        stroke-width="2" stroke-linejoin="round" />
+                    <circle cx="32" cy="32" r="5" fill="#c15c78" />
+                </svg>
+                My Web Portfolio
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 6h18M3 12h18M3 18h18" />
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activity.html" class="active">Activity</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="exam.html">Exam</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <section class="page-hero">
+            <span class="eyebrow">activity</span>
+            <h1>My Activity Uploads</h1>
+        </section>
+
+        <section class="gallery-section">
+          
+            <div class="gallery-meta">
+                <h4>Uploaded Work</h4>
+            </div>
+
+            <div class="gallery">
+
+                <!-- ===== copy everything from here... ===== -->
+                <div class="card" style="--tilt:-1.5deg;">
+                    <span class="pin"></span>
+                    <div class="thumb" data-title="Chapter 3 Quiz"
+                        data-desc="Scored 9/10 — missed the photosynthesis question.">
+                        <img src="images/quiz/example1.jpg" alt="Chapter 3 Quiz" loading="lazy">
+                        <span class="thumb-zoom">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="7" />
+                                <path d="M21 21l-4.35-4.35" />
+                                <path d="M11 8v6M8 11h6" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="cap">Chapter 3 Quiz</p>
+                    <p class="desc">Scored 9/10 — missed the photosynthesis question.</p>
+                </div>
+                <!-- ===== ...to here, for each new upload ===== -->
+
+                <div class="card" style="--tilt:1deg;">
+                    <span class="pin"></span>
+                    <div class="thumb" data-title="Vocabulary Quiz 2" data-desc="">
+                        <img src="images/quiz/example2.jpg" alt="Vocabulary Quiz 2" loading="lazy">
+                        <span class="thumb-zoom">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="7" />
+                                <path d="M21 21l-4.35-4.35" />
+                                <path d="M11 8v6M8 11h6" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="cap">Vocabulary Quiz 2</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer gingham">
+        <div class="wrap">made with <span class="script">love</span> — by yours truly, lmr♡</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
