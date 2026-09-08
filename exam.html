@@ -29,8 +29,8 @@
             </button>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="activity.html">Activity</a></li>
                 <li><a href="quiz.html">Quiz</a></li>
-                <li><a href="assignment.html">Assignment</a></li>
                 <li><a href="exam.html" class="active">Exam</a></li>
             </ul>
         </div>
@@ -39,31 +39,56 @@
     <main class="wrap">
         <section class="page-hero">
             <span class="eyebrow">examination</span>
-            <h1 contenteditable="true" class="editable">My Exam Uploads</h1>
+            <h1>My Exams</h1>
         </section>
 
-        <section class="uploader-section" data-gallery="quiz">
-            <div class="dropzone">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                    <path d="M12 16V4M12 4l-4 4M12 4l4 4" />
-                    <path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" />
-                </svg>
-                <h3>drag & drop your images here</h3>
-                <p>or click to browse — JPG, PNG, or any image file</p>
-                <span class="dz-browse">choose files</span>
-                <input type="file" accept="image/*" multiple>
-            </div>
+        <section class="gallery-section">
 
             <div class="gallery-meta">
                 <h4>Uploaded Work</h4>
-                <span class="count">no uploads yet</span>
             </div>
-            <div class="gallery"></div>
+
+            <div class="gallery">
+
+                <!-- ===== copy everything from here... ===== -->
+                <div class="card" style="--tilt:-1.5deg;">
+                    <span class="pin"></span>
+                    <div class="thumb" data-title="Quiz 1" data-desc="Scored 18/20">
+                        <img src="/Images/Ruiz_Quiz 1.png" alt="Quiz 1" loading="lazy">
+                        <span class="thumb-zoom">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="7" />
+                                <path d="M21 21l-4.35-4.35" />
+                                <path d="M11 8v6M8 11h6" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="cap">Quiz 1</p>
+                    <p class="desc">Scored 18/20</p>
+                </div>
+                <!-- ===== ...to here, for each new upload ===== -->
+
+                <div class="card" style="--tilt:1deg;">
+                    <span class="pin"></span>
+                    <div class="thumb" data-title="Vocabulary Quiz 2" data-desc="">
+                        <img src="images/quiz/example2.jpg" alt="Vocabulary Quiz 2" loading="lazy">
+                        <span class="thumb-zoom">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="7" />
+                                <path d="M21 21l-4.35-4.35" />
+                                <path d="M11 8v6M8 11h6" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="cap">Vocabulary Quiz 2</p>
+                </div>
+
+            </div>
         </section>
     </main>
 
     <footer class="site-footer gingham">
-        <div class="wrap">made with <span class="script">love</span> —  by yours truly, lmr♡</div>
+        <div class="wrap">made with <span class="script">love</span> — by yours truly, lmr♡</div>
     </footer>
 
     <script src="script.js"></script>
